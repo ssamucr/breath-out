@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".DiagramActivity">
+
+    <ImageView
+        android:id="@+id/diagramImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/diagrama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/wordBankLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diagramImageView"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagramImageView"
+        app:layout_constraintVertical_bias="0.169"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/word1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Traquea"
+            android:text="Traquea"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Bronquios"
+            android:text="Bronquios"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/word5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Laringe"
+            android:text="Laringe"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/word7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Pulmones"
+            android:text="Pulmones"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Faringe"
+            android:text="Faringe"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Diafragma"
+            android:text="Diafragma"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Nariz"
+            android:text="Nariz"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/word_background"
+            android:padding="8dp"
+            android:tag="Alveolos"
+            android:text="Alveolos"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/blankSpacesLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/diagramImageView"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/blank1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/word_background"
+            android:tag="Traquea" />
+
+        <TextView
+            android:id="@+id/blank2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Bronquios" />
+
+        <TextView
+            android:id="@+id/blank3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Nariz" />
+
+        <TextView
+            android:id="@+id/blank4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Faringe" />
+
+        <TextView
+            android:id="@+id/blank5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:layout_marginRight="0dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Laringe" />
+
+        <TextView
+            android:id="@+id/blank6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Alveolos" />
+
+        <TextView
+            android:id="@+id/blank7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Pulmones" />
+
+        <TextView
+            android:id="@+id/blank8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:textAlignment="center"
+            android:layout_marginTop="90dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blank_background"
+            android:tag="Diafragma" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/endBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:visibility="gone"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordBankLayout" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partes del sistema respiratorio"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/blank_background"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:padding="2sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

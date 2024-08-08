@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Question10Activity">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="¿Qué podemos hacer para mantener nuestro sistema respiratorio saludable?"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/option_background"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/option1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:text="No fumar y evitar la contaminación del aire"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/option1Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/no_fumar" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/option_background"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/option2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:text="Hacer ejercicio regularmente y dormir lo suficiente"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/option2Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/dormir_ejercicio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/option_correct_background"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/option3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:text="Todas las respuestas anteriores"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Siguiente"
+        android:visibility="gone"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
